@@ -1,0 +1,6 @@
+{
+  "name": "Agência de Emprego Popular",
+  "description": "Plataforma digital para conectar moradores e pequenos comerciantes de bairros periféricos a oportunidades locais de trabalho.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

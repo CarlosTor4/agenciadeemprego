@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --celeste: #c2f8ff;
+    --azul-bebe: #96d6f8;
+    --turquesa-claro: #b6f5f3;
+    --turquesa: #00e5ff;
+    --mediterraneo: #73bbf8;
+    --azul-capri: #00b2fe;
+    --azul-caribe: #9bbad8;
+    --azul-majestic: #567c8a;
+    --azul-grisalho: #5d8098;
+    --azul-inverno: #297ab7;
+    --azul-porcelana: #5783b4;
+    --indigo: #155da8;
+    --azul-royal: #386ee9;
+    --azul-cobalto: #0055b8;
+    --azul-medio: #001eb8;
+    --azul-profundo: #005d8b;
+    --azul-aquamarine: #376476;
+    --azul-marinho: #000d6b;
+    --azul-oxford: #091b34;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom background matching Navbar dark blue tone (#091b34) */
+.bg-wave-pattern {
+  background-color: #091b34;
+  background-image: 
+    radial-gradient(circle at 20% 25%, rgba(0, 178, 254, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 80% 75%, rgba(21, 93, 168, 0.12) 0%, transparent 50%),
+    linear-gradient(180deg, #091b34 0%, #091b34 75%, #071527 100%);
+}
+
+.bg-soft-blue-gradient {
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%);
+}
+
+/* Subtle glow and card shadow */
+.card-shadow-custom {
+  box-shadow: 0 10px 30px -5px rgba(9, 27, 52, 0.08), 0 4px 12px -2px rgba(0, 85, 184, 0.05);
+}
+
+.card-hover-effect {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(0, 85, 184, 0.15);
+}
